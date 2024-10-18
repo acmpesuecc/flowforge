@@ -444,6 +444,7 @@ const DocumentationPage: React.FC = () => {
       >
         Return to Homepage
       </button>
+
         </main>
       </div>
     </div>
@@ -467,7 +468,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   title: {
     margin: 0,
-    color: '#000033',
+    color: '##4caf50',
   },
   mainContent: {
     display: 'flex',
@@ -510,6 +511,34 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontWeight: 'bold',
     color: '#4caf50',
     marginBottom: '0.5rem',
+  },
+
+  returnButton: {
+    position: 'fixed',
+    bottom: '20px',
+    left: '20px',
+    backgroundColor: '#4caf50',
+    color: 'white',
+    border: 'none',
+    padding: '10px 20px',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    transition: 'background-color 0.3s, transform 0.3s',
+  },
+
+subHeading: {
+    color: '#e0e0e0', 
+    fontSize: '1.5rem',
+    fontWeight: '600',
+    marginBottom: '0.75rem',
+  },
+
+  codeBlock: {
+    marginBottom: '2rem',
+    backgroundColor: '#1e1e1e', // Matches the dark theme
+    padding: '1rem',
+    borderRadius: '8px',
   },
 };
 
