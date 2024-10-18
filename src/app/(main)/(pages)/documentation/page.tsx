@@ -536,7 +536,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     position: 'fixed',
     bottom: '20px',
     left: '20px',
-    backgroundColor: '#4caf50',
+    backgroundColor: '#1d3858',
     color: 'white',
     border: 'none',
     padding: '10px 20px',
