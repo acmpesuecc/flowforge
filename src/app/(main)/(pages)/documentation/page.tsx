@@ -50,34 +50,42 @@ const DocumentationPage: React.FC = () => {
     key={section.id}
     style={{ marginBottom: '2rem', backgroundColor: '#2e2e2e', padding: '1.5rem', borderRadius: '8px' }}
   >
-         <p>
-              Welcome to the FlowForge Documentation! FlowForge is a powerful platform designed to help organizations and individuals automate their workflows and build sophisticated digital solutions using cutting-edge technologies. 
-            </p>
-            <p>
-              As a service provider, FlowForge specializes in creating visually stunning, modern software products that leverage the latest frameworks, tools, and methodologies to solve real-world problems. At its core, FlowForge aims to streamline the process of automating repetitive tasks, integrating various services, and deploying scalable applications.
-            </p>
-            <p>
-              Whether you are a developer looking to set up automation pipelines or a business aiming to enhance productivity, FlowForge provides a comprehensive set of tools and resources to meet your needs. The FlowForge platform is built by a team of passionate developers and designers who are dedicated to delivering high-quality solutions.
-            </p>
-            <p>
-              Their commitment to innovation and client satisfaction ensures that every project is not only functional but also aesthetically pleasing, user-friendly, and adaptable to various business requirements.
-            </p>
-            <p>
-              With a range of plans tailored to different levels of usage, FlowForge makes it easy to start small and scale up as your needs grow. You can explore features such as:
-            </p>
-            <ul>
-              <li><strong>Visual Workflow Automation:</strong> Design workflows using a visual interface that simplifies complex automation processes.</li>
-              <li><strong>API Integration:</strong> Connect your applications seamlessly with external services to expand your capabilities.</li>
-              <li><strong>Real-time Collaboration:</strong> Empower teams to work together more effectively with collaborative tools that streamline development and deployment.</li>
-              <li><strong>Customizable Templates:</strong> Speed up development by using pre-built templates that cover common use cases and workflows.</li>
-              <li><strong>Monitoring and Analytics:</strong> Track the performance of your workflows and applications, and gain insights for optimization.</li>
-            </ul>
-            <p>
-              The documentation is structured to guide you through all stages of using FlowForge, from getting started with basic setup and installation to advanced topics like API integration and best practices. Whether you are a beginner exploring the platform for the first time or an experienced developer looking for in-depth technical details, the documentation provides comprehensive resources to support your journey.
-            </p>
-            <p>
-              Dive into our guides and tutorials to unlock the full potential of FlowForge and take the first step toward automating your workflows and transforming your ideas into reality.
-            </p>
+         <div style={styles.container}>
+      <h1 style={styles.heading}>Welcome to the FlowForge Documentation!</h1>
+      <p style={styles.paragraph}>
+        FlowForge is a powerful platform designed to help organizations and individuals automate their workflows and build sophisticated digital solutions using cutting-edge technologies.
+      </p>
+      <p style={styles.paragraph}>
+        As a service provider, FlowForge specializes in creating visually stunning, modern software products that leverage the latest frameworks, tools, and methodologies to solve real-world problems. At its core, FlowForge aims to streamline the process of automating repetitive tasks, integrating various services, and deploying scalable applications.
+      </p>
+      <p style={styles.paragraph}>
+        Whether you are a developer looking to set up automation pipelines or a business aiming to enhance productivity, FlowForge provides a comprehensive set of tools and resources to meet your needs. The FlowForge platform is built by a team of passionate developers and designers who are dedicated to delivering high-quality solutions.
+      </p>
+      <h2 style={styles.subheading}>Features</h2>
+      <ul style={styles.list}>
+        <li style={styles.listItem}>
+          <strong>Visual Workflow Automation:</strong> Design workflows using a visual interface that simplifies complex automation processes.
+        </li>
+        <li style={styles.listItem}>
+          <strong>API Integration:</strong> Connect your applications seamlessly with external services to expand your capabilities.
+        </li>
+        <li style={styles.listItem}>
+          <strong>Real-time Collaboration:</strong> Empower teams to work together more effectively with collaborative tools that streamline development and deployment.
+        </li>
+        <li style={styles.listItem}>
+          <strong>Customizable Templates:</strong> Speed up development by using pre-built templates that cover common use cases and workflows.
+        </li>
+        <li style={styles.listItem}>
+          <strong>Monitoring and Analytics:</strong> Track the performance of your workflows and applications, and gain insights for optimization.
+        </li>
+      </ul>
+      <p style={styles.paragraph}>
+        The documentation is structured to guide you through all stages of using FlowForge, from getting started with basic setup and installation to advanced topics like API integration and best practices. Whether you are a beginner exploring the platform for the first time or an experienced developer looking for in-depth technical details, the documentation provides comprehensive resources to support your journey.
+      </p>
+      <p style={styles.paragraph}>
+        Dive into our guides and tutorials to unlock the full potential of FlowForge and take the first step toward automating your workflows and transforming your ideas into reality.
+      </p>
+    </div>
 
   </section>
 )}
@@ -391,7 +399,7 @@ const DocumentationPage: React.FC = () => {
     key={section.id}
     style={{ marginBottom: '2rem', backgroundColor: '#2e2e2e', padding: '1.5rem', borderRadius: '8px' }}
   >
-       <h2 style={styles.heading}><span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Frequently Asked Questions (FAQ)</span></h2>
+       <h2 style={styles.heading}><span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Frequently Asked Questions</span></h2>
 
             <div style={styles.faqItem}>
               <h3 style={styles.question}>1. What is FlowForge?</h3>
@@ -490,6 +498,17 @@ const styles: { [key: string]: React.CSSProperties } = {
   sidebarItem: {
     marginBottom: '0.5rem',
     cursor: 'pointer',
+    fontSize: '24px',
+    fontWeight: 'bold',
+    color: '#f0f0f0',
+    textDecoration: 'underline',
+    padding: '8px',
+    borderRadius: '5px',
+    transition: 'background-color 0.3s ease-in-out',
+    backgroundColor: '#2e2e2e',
+  },
+    sidebarItemHover: {
+    backgroundColor: '#4caf50'
   },
   contentArea: {
     marginLeft: '250px',
@@ -536,9 +555,34 @@ subHeading: {
 
   codeBlock: {
     marginBottom: '2rem',
-    backgroundColor: '#1e1e1e', // Matches the dark theme
+    backgroundColor: '#1e1e1e',
     padding: '1rem',
     borderRadius: '8px',
+  },
+  sections: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+    color: '#f0f0f0',
+    textDecoration: 'underline',
+    cursor: 'pointer',
+    padding: '8px',
+    borderRadius: '5px',
+    transition: 'background-color 0.3s ease-in-out',
+    backgroundColor: '#2e2e2e',
+  },
+  paragraph: {
+    fontSize: '16px',
+    color: '#d0d0d0',
+    marginBottom: '15px',
+  },
+  list: {
+    listStyleType: 'disc',
+    marginLeft: '20px',
+    color: '#ffffff',
+  },
+  listItem: {
+    marginBottom: '10px',
   },
 };
 
