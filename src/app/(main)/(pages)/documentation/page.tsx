@@ -526,17 +526,19 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#3e3e3e',
     borderRadius: '5px',
   },
-  question: {
-    fontWeight: 'bold',
-    color: '#4caf50',
-    marginBottom: '0.5rem',
-  },
+question: {
+  fontWeight: 900,
+  textDecoration: 'underline',
+  color: '0b1015',
+  marginBottom: '0.5rem',
+},
+
 
   returnButton: {
     position: 'fixed',
     bottom: '20px',
-    left: '20px',
-    backgroundColor: '#1d3858',
+    left: '28px',
+    backgroundColor: 'black',
     color: 'white',
     border: 'none',
     padding: '10px 20px',
