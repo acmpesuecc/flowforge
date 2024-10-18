@@ -48,7 +48,7 @@ const DocumentationPage: React.FC = () => {
   <section
     id={section.id}
     key={section.id}
-    style={{ marginBottom: '2rem', backgroundColor: '#2e2e2e', padding: '1.5rem', borderRadius: '8px' }}
+    style={{ marginBottom: '2rem', backgroundColor: '#262727', padding: '1.5rem', borderRadius: '8px' }}
   >
          <div style={styles.container}>
       <h1 style={styles.heading}>Welcome to the FlowForge Documentation!</h1>
@@ -180,7 +180,7 @@ const DocumentationPage: React.FC = () => {
   <section
     id={section.id}
     key={section.id}
-    style={{ marginBottom: '2rem', backgroundColor: '#2e2e2e', padding: '1.5rem', borderRadius: '8px' }}
+    style={{ marginBottom: '2rem', backgroundColor: '#262727', padding: '1.5rem', borderRadius: '8px' }}
   >
     <p>
       The FlowForge API allows you to programmatically interact with the platform's core features, enabling seamless integration with your applications. This reference covers the key endpoints, request formats, and response structures to help you utilize the API effectively.
@@ -397,7 +397,7 @@ const DocumentationPage: React.FC = () => {
   <section
     id={section.id}
     key={section.id}
-    style={{ marginBottom: '2rem', backgroundColor: '#2e2e2e', padding: '1.5rem', borderRadius: '8px' }}
+    style={{ marginBottom: '2rem', backgroundColor: '#262727', padding: '1.5rem', borderRadius: '8px' }}
   >
        <h2 style={styles.heading}><span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Frequently Asked Questions</span></h2>
 
