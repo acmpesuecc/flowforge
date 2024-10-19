@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --accent-color: #923eb8;
+    --border-color: #444;
+    --hover-shadow: rgba(0, 0, 0, 0.4);
+    --secondary-text-color: #b0b0b0;
+    --card-background-color: #2b2b2b;
+}
+
+.back-button {
+    background: linear-gradient(135deg, var(--accent-color), #2c387e);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resource-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource-page h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.resource-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.resource-item {
+    background-color: var(--card-background-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 8px var(--hover-shadow);
+}
+
+.resource-item h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+.resource-item p {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    margin-top: 0.5rem;
+}
+
+.resource-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px var(--hover-shadow);
+    border-color: var(--accent-color);
+}
+
+.resource-item:hover h2 {
+    color: #ffffff;
+}
+
+.resource-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.back-button {
+    background: linear-gradient(135deg, var(--accent-color), #2c387e);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color:'pink';
+}
+
+.back-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.5);
+}
