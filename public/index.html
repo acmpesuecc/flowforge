@@ -1,9 +1,10 @@
 <html>
 <head>
     
-    <meta name="description" content="FlowForge: Revolutionizing Node-RED Application Development">
-    <title>FlowForge - Automate Your Node-RED Workflows</title>
+    <meta name="description" content="FlowForge: Automate Node-RED workflows with secure, collaborative, and scalable solutions.">
+    <title>FlowForge - Automate Node-RED Workflows</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,9 +14,10 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
@@ -29,10 +31,12 @@
             color: #fff;
             padding: 80px 0;
             text-align: center;
+            position: relative;
         }
 
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         header p {
@@ -54,8 +58,29 @@
             background-color: #C0392B;
         }
 
+        .icon-box {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .icon-box i {
+            font-size: 1.5rem;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .icon-box i:hover {
+            background-color: #FF5733;
+            color: white;
+        }
+
         section {
             padding: 60px 0;
+            transition: opacity 0.3s ease-in-out;
         }
 
         h2 {
@@ -74,18 +99,25 @@
             flex-wrap: wrap;
             gap: 20px;
             justify-content: space-around;
+            transition: all 0.3s ease-in-out;
         }
 
         .feature {
-            background-color: #e7e7e7;
-            padding: 20px;
+            background-color: #ffffff;
+            padding: 25px;
             border-radius: 10px;
             text-align: center;
             width: 30%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
         }
 
         .feature h3 {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             margin-bottom: 10px;
         }
 
@@ -95,21 +127,56 @@
             text-align: center;
             padding: 20px 0;
         }
+
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            font-size: 18px;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+            background-color: #f5f7fa;
+            color: #333;
+            margin-bottom: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .active {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>FlowForge</h1>
-            <p>Revolutionizing Node-RED Application Development with Collaborative, Secure, and Efficient Workflows.</p>
+            <p>Automate, Secure, and Scale Your Node-RED Workflows.</p>
             <a href="https://github.com/himaniraoo/flowforge" class="btn">View on GitHub</a>
+            <div class="icon-box">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </header>
 
     <section class="overview">
         <div class="container">
             <h2>What is FlowForge?</h2>
-            <p>FlowForge is an open-source platform built on top of Node-RED to help teams collaborate, manage, and deploy data workflows in a secure and scalable environment. It enhances the capabilities of Node-RED with remote deployment, collaboration tools, and DevOps support, making it ideal for businesses across industries.</p>
+            <p>FlowForge is a platform designed to enhance Node-RED workflows with collaborative features, security, and scalability for developers. Whether it's automation, IoT, or real-time data, FlowForge provides the tools to optimize deployment and manage workflows seamlessly.</p>
         </div>
     </section>
 
@@ -119,59 +186,66 @@
             <div class="feature-grid">
                 <div class="feature">
                     <h3>Collaborative Development</h3>
-                    <p>Work with multiple developers on the same Node-RED instance, enabling faster development and teamwork.</p>
+                    <p>Enable multiple developers to work on the same instance, speeding up development and reducing conflicts.</p>
                 </div>
                 <div class="feature">
                     <h3>Remote Deployment</h3>
-                    <p>Deploy your Node-RED workflows across servers and edge devices with ease and automation.</p>
+                    <p>Deploy your Node-RED flows across servers and edge devices seamlessly with minimal setup.</p>
                 </div>
                 <div class="feature">
                     <h3>Snapshot Management</h3>
-                    <p>Keep your deployments safe with automated snapshots for reliable rollbacks and restorations.</p>
+                    <p>Take automatic snapshots of your deployments and roll back to previous states whenever necessary.</p>
                 </div>
                 <div class="feature">
-                    <h3>DevOps Integration</h3>
-                    <p>Integrate FlowForge with your CI/CD pipeline for continuous development and deployment of Node-RED applications.</p>
+                    <h3>DevOps Ready</h3>
+                    <p>Integrate with your DevOps pipelines for continuous delivery and integration.</p>
                 </div>
                 <div class="feature">
-                    <h3>Enhanced Security</h3>
-                    <p>Maintain a secure environment for your development and deployment processes with built-in security features.</p>
+                    <h3>Security Built-In</h3>
+                    <p>FlowForge ensures that your workflow and data are secure with robust access control and monitoring.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="installation">
-        <div class="container">
-            <h2>Installation</h2>
-            <p>FlowForge supports Linux, macOS, and Windows. It requires Node.js v16 and includes installation scripts for hassle-free setup. Follow the complete guide to get FlowForge running on your system.</p>
-            <a href="https://github.com/himaniraoo/flowforge" class="btn">Install FlowForge</a>
         </div>
     </section>
 
     <section class="use-cases">
         <div class="container">
             <h2>Use Cases</h2>
-            <ul>
-                <li><strong>Healthcare:</strong> Automate and integrate data from patient monitoring devices.</li>
-                <li><strong>Manufacturing:</strong> Enable real-time production monitoring and predictive maintenance using IoT.</li>
-                <li><strong>Finance:</strong> Securely manage and automate financial data workflows.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="community">
-        <div class="container">
-            <h2>Join Our Community</h2>
-            <p>FlowForge is an open-source project with a vibrant community of developers and contributors. Join us on GitHub to explore, contribute, or collaborate on exciting new features.</p>
-            <a href="https://github.com/himaniraoo/flowforge" class="btn">Contribute on GitHub</a>
+            <button class="accordion">Healthcare Automation</button>
+            <div class="panel">
+                <p>Leverage FlowForge to integrate data from patient monitoring devices, automating workflow and data collection.</p>
+            </div>
+            <button class="accordion">Manufacturing Optimization</button>
+            <div class="panel">
+                <p>Real-time monitoring of production lines with predictive maintenance to reduce downtime and enhance productivity.</p>
+            </div>
+            <button class="accordion">Financial Services</button>
+            <div class="panel">
+                <p>Automate financial data collection and reporting workflows securely, ensuring compliance and security.</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2024 FlowForge. Built by and for the developer community. <a href="https://github.com/himaniraoo/flowforge">GitHub</a></p>
+            <p>© 2024 FlowForge. Developed with ♥ by the Open-Source Community. <a href="https://github.com/himaniraoo/flowforge">GitHub</a></p>
         </div>
     </footer>
+
+    <script>
+        // Accordion functionality for use-cases
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
