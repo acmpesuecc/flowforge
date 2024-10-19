@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { clients, products } from "@/lib/constant";
 import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
 import { HeroParallax } from "@/components/global/connect-parallax";
-import { LampComponent} from "@/components/global/lamp";
+import { LampComponent } from "@/components/global/lamp";
 import { CardContainer, CardBody, CardItem } from "@/components/global/3d-card";
 import { CheckIcon } from "lucide-react";
 import { button } from "framer-motion/client";
@@ -48,8 +48,8 @@ export default function Home() {
         direction="right"
         speed="slow"
       />
-      <section> 
-        <HeroParallax products = {products}></HeroParallax>
+      <section>
+        <HeroParallax products={products}></HeroParallax>
       </section>
       <section className="mt-[-500px]">
         <LampComponent />
@@ -59,41 +59,41 @@ export default function Home() {
               <CardItem
                 translateZ="50"
                 className="text-3xl font-bold text-neutral-600 dark:text-white"
-                >
-                Hobby 
+              >
+                Hobby
                 <h2 className="text-6xl">$0</h2>
               </CardItem>
-              <CardItem 
+              <CardItem
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                >
-                  Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
-                  never leave us after this {";)"}
-                  <ul className = "my-4 flex flex-col gap-2">
+              >
+                Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
+                never leave us after this {";)"}
+                <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
-                      <CheckIcon/>3 Free automations 
-                    </li>
-                   <li className="flex items-center gap-2">
-                      <CheckIcon/>100 tasks per month 
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckIcon/>Two-step Actions 
-                    </li> 
-                  </ul>
-               </CardItem>
+                    <CheckIcon />3 Free automations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />100 tasks per month
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />Two-step Actions
+                  </li>
+                </ul>
+              </CardItem>
               <div className="flex justify-between items-center mt-8">
-                <CardItem 
+                <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-                    Try Now {"->"}
-                  </CardItem>
-                  <CardItem 
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Get Started Now
-                    </CardItem>
+                  Try Now {"->"}
+                </CardItem>
+                <CardItem
+                  translateZ={20}
+                  as="button"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+                  Get Started Now
+                </CardItem>
               </div>
             </CardBody>
           </CardContainer>
@@ -102,41 +102,41 @@ export default function Home() {
               <CardItem
                 translateZ="50"
                 className="text-3xl font-bold text-neutral-600 dark:text-white"
-                >
-                Pro Plan 
+              >
+                Pro Plan
                 <h2 className="text-6xl">$20</h2>
               </CardItem>
-              <CardItem 
+              <CardItem
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                >
-                  Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
-                  never leave us after this {";)"}
-                  <ul className = "my-4 flex flex-col gap-2">
+              >
+                Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
+                never leave us after this {";)"}
+                <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
-                      <CheckIcon/>3 Free automations 
-                    </li>
-                   <li className="flex items-center gap-2">
-                      <CheckIcon/>100 tasks per month 
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckIcon/>Two-step Actions 
-                    </li> 
-                  </ul>
-               </CardItem>
+                    <CheckIcon />3 Free automations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />100 tasks per month
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />Two-step Actions
+                  </li>
+                </ul>
+              </CardItem>
               <div className="flex justify-between items-center mt-8">
-                <CardItem 
+                <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-                    Try Now {"->"}
-                  </CardItem>
-                  <CardItem 
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Get Started Now
-                    </CardItem>
+                  Try Now {"->"}
+                </CardItem>
+                <CardItem
+                  translateZ={20}
+                  as="button"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+                  Get Started Now
+                </CardItem>
               </div>
             </CardBody>
           </CardContainer>
@@ -145,41 +145,41 @@ export default function Home() {
               <CardItem
                 translateZ="50"
                 className="text-3xl font-bold text-neutral-600 dark:text-white"
-                >
-                Unlimited 
+              >
+                Unlimited
                 <h2 className="text-6xl">$100</h2>
               </CardItem>
-              <CardItem 
+              <CardItem
                 translateZ="60"
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-                >
-                  Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
-                  never leave us after this {";)"}
-                  <ul className = "my-4 flex flex-col gap-2">
+              >
+                Get a glimpse of what our software is capable of. Just a heads up {"you'll "}
+                never leave us after this {";)"}
+                <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">
-                      <CheckIcon/>3 Free automations 
-                    </li>
-                   <li className="flex items-center gap-2">
-                      <CheckIcon/>100 tasks per month 
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckIcon/>Two-step Actions 
-                    </li> 
-                  </ul>
-               </CardItem>
+                    <CheckIcon />3 Free automations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />100 tasks per month
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <CheckIcon />Two-step Actions
+                  </li>
+                </ul>
+              </CardItem>
               <div className="flex justify-between items-center mt-8">
-                <CardItem 
+                <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white">
-                    Try Now {"->"}
-                  </CardItem>
-                  <CardItem 
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                      Get Started Now
-                    </CardItem>
+                  Try Now {"->"}
+                </CardItem>
+                <CardItem
+                  translateZ={20}
+                  as="button"
+                  className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+                  Get Started Now
+                </CardItem>
               </div>
             </CardBody>
           </CardContainer>
